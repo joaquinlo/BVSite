@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title_tag }}</title>
+</head>
+<body>
+    <form action="/new" method="POST">
+        <input type="text" id="title" name="title" placeholder="Titulo" required><br>
+        <input type="text" id="subtitle" name="subtitle" placeholder="Subitulo" required><br>
+        <textarea id="body" name="body" rows="9" cols="150" placeholder="Cuerpo..." required></textarea>
+        <input type="submit" value="Submit">
+      </form>
+</body>
+</html>

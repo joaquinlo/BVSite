@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title_tag }}</title>
+</head>
+<body>
+    <form action="/update/{{ report.id }}" method="POST">
+        <input type="text" id="title" name="title" value="{{ report.title }}" required><br>
+        <input type="text" id="subtitle" name="subtitle" value="{{ report.subtitle }}" required><br>
+        <input type="text" id="body" rows="9" cols="150" name="body" value="{{ report.body }}" required><br>
+        <input type="submit" value="Submit">
+      </form>
+</body>
+</html>
